@@ -24,7 +24,7 @@ public class Rocket {
     }
 
     private void checkCode(String code) throws Exception {
-        if (code.length() == 8) throw new Exception();
+        if (code.length() != 8) throw new Exception();
     }
 
 
