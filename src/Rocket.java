@@ -7,7 +7,9 @@ public class Rocket {
     public List<Propeller> powerPropellants = new ArrayList<>();
 
 
-    public Rocket(String code) {
+    public Rocket(String code) throws Exception {
+
+        checkCode(code);
         this.code = code;
     }
 
@@ -20,6 +22,11 @@ public class Rocket {
         }
         return result;
     }
+
+    private void checkCode(String code) throws Exception {
+        if (code.length() == 8) throw new Exception();
+    }
+
 
     public void addPower(int i) throws Exception {
         powerPropellants.add(createPropeller(i));
