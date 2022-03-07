@@ -28,14 +28,10 @@ public class Rocket {
     }
 
 
-    public void addPower(int i) throws Exception {
-        powerPropellants.add(createPropeller(i));
-    }
+    public void createPropeller(int power) {
+        Propeller propeller = new Propeller(power);
+        powerPropellants.add(propeller);
 
-    private Propeller createPropeller(int power) throws Exception {
-        Propeller propeller = new Propeller();
-        propeller.addPower(power);
-        return propeller;
     }
 
     public String getCode() {
