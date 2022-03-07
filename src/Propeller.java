@@ -1,5 +1,4 @@
 
-
 public class Propeller {
 
     private int power;
@@ -7,7 +6,6 @@ public class Propeller {
     public Propeller(int power) {
         this.power = power;
     }
-
 
     public int getPower() {
         return power;

@@ -36,7 +36,7 @@ public class Main {
     }
 
     private static void printResult(Rocket rocket) {
-        System.out.println("El coet es: " + rocket.getCode());
+        System.out.println("El coet : " + rocket.getCode());
         System.out.println(rocket.printStatus());
     }
 }
